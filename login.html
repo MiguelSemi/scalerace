@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-image: url('fondo.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 150px;
+        }
+
+        .mensaje {
+        font-size: 48px;
+        font-family: harlow solid;
+        color: yellow;
+        padding-bottom: 20px;
+        }
+
+        table {
+            border: 1px solid black;
+            padding: 10px;
+            background-color: white;
+            text-align: center;
+            margin-left: 25%;
+        }
+        td {
+            padding: 10px;
+        }
+
+        </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="mensaje">
+            Introduce tu nombre y contraseña de usuario
+        </div>
+        <table border="1">
+        <td>
+            <form name="login" method="get" action="validar.php">
+            <p>Usuario <input type="text" name="nombre" value="" required></p>
+            <p>Contraseña <input type="int" name="contra" value="" required></p>
+            <p><input type="submit" value="Continuar"></p>
+            </form>
+            <form name="login" method="get" action="CrearUsuario.php">
+            <p><input type="submit" value="Registrarse"></p>
+            </form>
+        </td>   
+        </table>
+    </div>
+</body>
+</html>
